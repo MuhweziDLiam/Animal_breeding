@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/black_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.TextInputLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:backgroundTint="@color/black_20"
+            android:textColor="@color/black_20"
+            android:hint="Enter Animal Id"
+            android:id="@+id/edit_one_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/android_material_spinner_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Select a search category"
+        app:met_floatingLabel="normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_add_edit"
+            android:background="@drawable/round_button_bg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:text="GO"/>
+
+        <Button
+            android:id="@+id/btn_add_delete"
+            android:background="@drawable/round_button_bg_red"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:text="GO"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

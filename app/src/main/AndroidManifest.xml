@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.muhwezidenisliam.breedingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activities.DemoActivity" android:theme="@style/ATheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Demo_Activity" android:theme="@style/ATheme"/>
+        <activity android:name=".activities.LoginActivity" android:theme="@style/ATheme"/>
+        <activity android:name=".add_records.Add_Breed" android:theme="@style/AppTheme"/>
+        <activity android:name=".add_records.Add_Cattle" android:theme="@style/AppTheme"/>
+        <activity android:name=".add_records.Add_Heifer" android:theme="@style/AppTheme"/>
+        <activity android:name=".add_records.Add_Milk" android:theme="@style/AppTheme"/>
+        <activity android:name=".view_records.View_Breed" android:theme="@style/AppTheme"/>
+        <activity android:name=".view_records.View_Cattle" android:theme="@style/AppTheme"/>
+        <activity android:name=".view_records.View_Heifer" android:theme="@style/AppTheme"/>
+        <activity android:name=".view_records.View_Milk" android:theme="@style/AppTheme"/>
+        <activity android:name=".generate_reports.Gen_Breed" android:theme="@style/AppTheme"/>
+        <activity android:name=".generate_reports.Gen_Cattle" android:theme="@style/AppTheme"/>
+        <activity android:name=".generate_reports.Gen_Milk" android:theme="@style/AppTheme"/>
+        <activity android:name=".generate_reports.Gen_Heifer" android:theme="@style/AppTheme"/>
+        <activity android:name=".edit_records.Edit_Breed" android:theme="@style/AppTheme"/>
+        <activity android:name=".edit_records.Edit_Cattle" android:theme="@style/AppTheme"/>
+        <activity android:name=".edit_records.Edit_Heifer" android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>
